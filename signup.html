@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>GutFoundry | Fuel Your Fitness Goals</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&amp;display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+      <script id="tailwind-config">
+            tailwind.config = {
+              darkMode: "class",
+              theme: {
+                extend: {
+                  colors: {
+                    "primary": "#E0642A",
+                    "accent": "#F0916E",
+                    "background-light": "#0B1324",
+                    "background-dark": "#131f1d",
+                  },
+                  fontFamily: {
+                    "display": ["Lexend"]
+                  },
+                  borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+              },
+            }
+      </script>
+  <style>
+          body {
+              font-family: 'Lexend', sans-serif;
+          }
+          .material-symbols-outlined {
+              font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+          }
+      </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-[#101918] dark:text-white transition-colors duration-300">
+
+<!-- Header -->
+<header class="w-full border-b border-gray-200 dark:border-gray-800">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+    <div class="flex items-center gap-3">
+      <div class="flex h-15 w-15 items-center justify-center rounded-lg bg-none">
+        <img
+          src="assets/logo.png"
+          alt="logo"
+          class="h-6 w-6 object-contain"
+        />
+      </div>
+      <h2 class="text-xl font-black tracking-tight">GutFoundry</h2>
+    </div>
+
+    <!-- Desktop Nav -->
+    <div class="hidden md:flex items-center gap-6">
+      <nav class="flex gap-6 text-sm font-medium text-gray-600 dark:text-gray-300">
+        <a href="#" class="hover:text-primary">Plans</a>
+        <a href="#" class="hover:text-primary">Menu</a>
+        <a href="#" class="hover:text-primary">Success Stories</a>
+        <a href="#" class="hover:text-primary">About</a>
+      </nav>
+      <button class="bg-primary text-white px-5 py-2 rounded-lg text-sm font-bold">
+        Log In
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Main -->
+<main class="flex-grow flex">
+
+  <div class="flex w-full max-w-[1440px] mx-auto">
+
+    <!-- Left Hero (Desktop only) -->
+    <div class="hidden lg:flex flex-1 relative bg-primary/10">
+      <div class="absolute inset-0 bg-cover bg-center"
+        style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuBNxDyBduWxsJCGZ46aSO1xl9JfM8gfqI602vHd9saxGsQgb1QVyUNy0OzxhIGHkeASYowgN_lE7avTM75xT9dPOgej9lszcCLtuA2p3tpyCDLSDH-1c6PG67xRua2njSsNiMrtrR7inCNV5LsAJoN_-PozikqJsneGqSNBcZXNjVdXXBaWvb68nF2WNFgpOjQeoZjIMvEsfGjsqdk-D-d5NNNnBDvGIpd5XIHVrRuCHEanOA0BrqveKstW4Q-fImkN3qOXXkKscpk')">
+      </div>
+      <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20"></div>
+
+      <div class="absolute bottom-16 left-10 right-10 text-white">
+        <h1 class="text-4xl xl:text-5xl font-black mb-4">Join the Community</h1>
+        <p class="text-lg text-gray-100 max-w-md">
+          #Fuel the FITNESS.
+        </p>
+      </div>
+    </div>
+
+    <!-- Form -->
+    <div class="flex-1 flex items-center justify-center px-4 sm:px-6 py-10">
+      <div class="w-full max-w-md space-y-6">
+
+        <div>
+          <h2 class="text-3xl font-black dark:text-white">Create your account</h2>
+          <p class="text-gray-500 mt-2">Start your Fit-Meal journey today.</p>
+        </div>
+
+        <!-- Google -->
+        <button class="w-full flex items-center justify-center gap-3 bg-white dark:bg-gray-800 border py-3 rounded-xl font-semibold">
+          <span>Sign up with Google</span>
+        </button>
+
+        <div class="flex items-center gap-4">
+          <div class="flex-grow border-t"></div>
+          <span class="text-sm text-gray-400">or email</span>
+          <div class="flex-grow border-t"></div>
+        </div>
+
+        <form class="space-y-4">
+          <input type="text" placeholder="Full Name"
+            class="w-full px-4 py-3 rounded-xl border focus:ring-2 focus:ring-primary"/>
+
+          <input type="email" placeholder="Email Address"
+            class="w-full px-4 py-3 rounded-xl border focus:ring-2 focus:ring-primary"/>
+
+          <input type="password" placeholder="Password"
+            class="w-full px-4 py-3 rounded-xl border focus:ring-2 focus:ring-primary"/>
+
+          <button class="w-full bg-primary py-4 rounded-xl text-white font-bold text-lg">
+            Create Account
+          </button>
+        </form>
+
+        <p class="text-sm text-center text-gray-500">
+          Already have an account?
+          <a href="#" class="text-primary font-bold">Log in</a>
+        </p>
+
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<!-- Mobile Footer -->
+<footer class="lg:hidden text-center py-6 text-xs text-gray-400 border-t">
+  © 2026 FitMeal Delivery
+</footer>
+
+</body>
+</html>
