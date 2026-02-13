@@ -1,328 +1,358 @@
 <!DOCTYPE html>
-
-<html class="dark" lang="en">
+<html lang="en">
 <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <title>GutFoundry | Fuel Your Fitness Goals</title>
-  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&amp;display=swap" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-  <script id="tailwind-config">
-        tailwind.config = {
-          darkMode: "class",
-          theme: {
-            extend: {
-              colors: {
-                "primary": "#E0642A",
-                "accent": "#F0916E",
-                "background-light": "#0B1324",
-                "background-dark": "#131f1d",
-              },
-              fontFamily: {
-                "display": ["Lexend"]
-              },
-              borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
-            },
-          },
-        }
-      </script>
-  <style>
-          body {
-              font-family: 'Lexend', sans-serif;
-          }
-          .material-symbols-outlined {
-              font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-          }
-      </style>
-</head>
-<body class="bg-background-light dark:bg-background-dark text-[#101918] dark:text-white transition-colors duration-300">
-  <div class="relative flex min-h-screen flex-col overflow-x-hidden">
-  <!-- Navigation Bar -->
-  <header class="sticky top-0 z-50 w-full border-b border-solid border-[#e9f1f0] dark:border-[#2a3a38] bg-white/80 dark:bg-background-dark/80 backdrop-blur-md px-6 md:px-20 py-4">
-  <div class="mx-auto flex max-w-[1200px] items-center justify-between">
-  <div class="flex items-center gap-3">
-  <div class="flex h-15 w-15 items-center justify-center rounded-lg bg-none">
-    <img
-      src="assets/logo.png"
-      alt="logo"
-      class="h-6 w-6 object-contain"
-    />
-  </div>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For You ❤️</title>
 
-  <h2 class="text-xl font-black tracking-tight">GutFoundry</h2>
-  </div>
-  <nav class="hidden md:flex items-center gap-10">
-  <a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Menu</a>
-  <a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Pricing</a>
-  <a class="text-sm font-semibold hover:text-primary transition-colors" href="#">About</a>
-  <a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Reviews</a>
-  </nav>
-  <div class="flex items-center gap-4">
-  <button class="hidden sm:flex text-sm font-bold px-4 py-2 text-[#101918] dark:text-white hover:opacity-70 transition-opacity">Login</button>
-  <a
-    href="signup.html"
-    class="flex h-10 items-center justify-center rounded-lg bg-primary px-6 text-sm font-bold text-white shadow-lg shadow-primary/20 hover:scale-105 transition-transform"
-  >
-    Sign Up
-  </a>
-  </div>
-  </div>
-  </header>
-  <main class="flex-1">
-  <!-- Hero Section -->
-  <section class="mx-auto max-w-[1200px] px-6 py-12 md:py-24">
-  <div class="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
-  <div class="flex flex-col gap-8">
-  <div class="flex flex-col gap-4">
-  <span class="inline-flex items-center gap-2 text-primary font-bold tracking-wider text-xs uppercase">
-  <span class="h-1 w-8 bg-primary"></span> Personalized Nutrition
-                              </span>
-  <h1 class="text-5xl font-black leading-tight tracking-tight md:text-7xl">
-                                  Fuel Your <span class="text-primary italic">Fitness</span> Goals
-                              </h1>
-  <p class="max-w-[500px] text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
-                                  Chef-prepared, nutritionist-approved meals delivered to your door. Choose your plan based on your fitness journey: Cut, Maintain, or Bulk.
-                              </p>
-  </div>
-  <div class="flex flex-wrap gap-4">
-  <button class="flex h-14 min-w-[180px] items-center justify-center rounded-xl bg-primary px-8 text-base font-bold text-white shadow-xl shadow-primary/30 transition-all hover:-translate-y-1">
-                                  Start Your Plan
-                              </button>
-  <button class="flex h-14 min-w-[180px] items-center justify-center rounded-xl bg-[#e9f1f0] dark:bg-white/10 px-8 text-base font-bold text-[#101918] dark:text-white transition-all hover:bg-white/20">
-                                  Order Today
-                              </button>
-  </div>
-  <div class="flex items-center gap-4 pt-4">
-  <div class="flex -space-x-3">
-  <div class="h-10 w-10 rounded-full border-2 border-white bg-gray-200 bg-cover" data-alt="Satisfied customer avatar profile 1" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBroWzryDu7L9Kj-TUsrOMSAwZ9dTfNS8yHe4LXbeQ-0CKF8KbJKGg0zHZUq6uaexhuT_8YVv9L7XCsG8ww1jGpNR3oogIfFWlwp-g93OH5wBlwY1ZxILUD8YBRfApzzSS_SUvHqGB0xKk-gseLmKzxRnm_nSnoLR9ei1Hork3TLu1f9o5WgxexW7_6MhmuKaBxCs5AK5hZ_ypQ9d7ZfZkYRBY8gAU1N8-6MLW_ZpMao9RI4ZDnX4VnY9jx6sGLjQtSd_gXklgcGeA')"></div>
-  <div class="h-10 w-10 rounded-full border-2 border-white bg-gray-300 bg-cover" data-alt="Satisfied customer avatar profile 2" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAl72ciuGhGfe6-3WJpla4U_bc8h_O3u7n0AauYFQsHJwTWwpNXQZjokXOW393Cuwcg6WmInfaxKYl4mGp0agjz7BMu3SxULcxyqns7y7BDZjrAWQQDHwA2CUlDvMbt86i5n8jArazc4PNrzd8H_Ozd-TfP9T3dhP8VyutU-HQ7RLBJ2MxTwpJAHAd6r3hxOx_7z8hqA71PYh-HPruVDsG8hhx6Rt59_O8Oe4U-lrCchIAzIGz9p3Vp27slCbERI_bg8ReY8rdsvHc')"></div>
-  <div class="h-10 w-10 rounded-full border-2 border-white bg-gray-400 bg-cover" data-alt="Satisfied customer avatar profile 3" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAc7-oay_7FQhewiTROBaqRkuUNBJR5tGTBML8Lfg5wRHnKgQfVEjTWNyJSsHpH9pdbxwfUHlnyc0HbnmerOvQI1EI3ZbvBEvb2IpNDHoVdYFwWKSlvDuX1QfaT2C25x9IfqvdYUpDYtCXrLIGPJksRz2Ezwexg_F_aUJgafP-6-hZAn5JsXsOcdFRqkr6HjPBI5yG0UN0KRzecujIqqyZhau8l0ZUaWiLYZMEZB48igKOYZRiAbmr_B90sjraail0npw5mQImYlYA')"></div>
-  </div>
-  <p class="text-sm font-medium"><span class="font-bold">2,500+</span> happy athletes</p>
-  </div>
-  </div>
-  <div class="relative">
-  <div class="absolute -inset-4 rounded-3xl bg-primary/10 blur-2xl"></div>
-  <div class="relative aspect-[4/5] overflow-hidden rounded-3xl bg-gray-200 shadow-2xl transition-transform hover:scale-[1.02]" data-alt="Healthy salmon bowl with quinoa and fresh greens" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDMt-QRDelFeUuQzgsOfZNdmPaKhNx9c-AmCXtnYNFcflpB8S3tCgFSLY_w9QsUJ7tlJrLus6DO468FjyAmbK9aCRq1oPbvWC5z-hJnfEvAcFIjBAIr8i-mlAtQry7oZWPOd9dgEhk5aP4CykVzBjzLpB2up6k-xG8vDtkNXtov6BHX8Xjdwe5-i_PAzOdomk9M2Is3t9cuMvqp5j7OHa2XqtBelugUyGcAvLq4YBynb5VFby5YR-Ht1603JE0R2L_5bheNO5MLhZo'); background-size: cover; background-position: center;">
-  <div class="absolute bottom-6 left-6 right-6 flex gap-2">
-  <span class="rounded-full bg-white/90 px-4 py-2 text-xs font-bold text-primary backdrop-blur">500 kcal</span>
-  <span class="rounded-full bg-white/90 px-4 py-2 text-xs font-bold text-accent backdrop-blur">High Protein</span>
-  </div>
-  </div>
-  </div>
-  </div>
-  </section>
-  <!-- Social Proof Section 
-  <section class="bg-white dark:bg-[#1a2b28] py-12">
-  <div class="mx-auto max-w-[1200px] px-6 text-center">
-  <h4 class="mb-10 text-xs font-bold tracking-[0.2em] text-[#578e85] uppercase">AS FEATURED IN</h4>
-  <div class="flex flex-wrap items-center justify-center gap-12 opacity-50 grayscale hover:grayscale-0 transition-all duration-500">
-  <div class="h-8 w-32 bg-contain bg-center bg-no-repeat" data-alt="Health Magazine brand logo placeholder" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC0s1T7UPD9bnLOIWTJtByKrKO8KDfpvb8w5OCBpMK-xRG2d2_3RbKWiTWxrP6TU6TCn-rXUKrD3RSjh9aN4RzUPopN-mu_wKG_e6SF-oAvXSYqThSCjdoho35Ac63qyIgNsKxJRt8S-5GGsQqK8XVR7QnGeEf4vdpwJeB8yAnPpoCaeQuNOQjEe6Ac1AbQebfex5vcM1D7sIYwTRkrgNzJokqx2-aXHXoiyp5nX50zkLj_t5FDHZbkIxzPglc67SFvtS2CF6Px0V0')"></div>
-  <div class="h-8 w-32 bg-contain bg-center bg-no-repeat" data-alt="Mens Fitness brand logo placeholder" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBACQthY_HXJuSCnrsq60Lnjva74yNICzcPMf5ryc-YfgdgGhvU4O7bRTQDcKkkF3-cGEjxeB3X-fdWaEdGmdoaaGTXuoEv3kTK9M6N_MRQ3IOhom59ZBURhTI52oBgommsdzVGn48sdgLDnS3MBNUWBUh7QDKF0tAAu8t0ytN2yHWFND22Vzh6EMoOm-i1nFMRdb_ofx8zllpWRMmM6zwJYAyW3QCxZWTrSSiezW9IgZQYRNC7_KYJWl7Js6aVHSMTcUap9kv_v_k')"></div>
-  <div class="h-8 w-32 bg-contain bg-center bg-no-repeat" data-alt="Womens Health brand logo placeholder" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCcAgiiUcHMUZSJ4bET7d1zkZOzndHBNW3fCMEAAAu1ewVfxHBYOqtvxdV4pQzpupgiBsE-M3-LOj1UOZWZmrnB88JXNdjK-0GChad7gQ_W1IAFmB9foVxg1hOLw7A-lMaC7STuFWZhru-SL9y3IX9kiJsLN8bkjFfN9ywmoeD6R4fcWJ9Z_-Z_lDmcUy4_Nyvr-hbQpVxd-vrdqWCvQRjCW2qzU6G9-SYU-oANJIGg0Pj20c8fpKn8sQShFTKq3mb1ip3PhWotELQ')"></div>
-  <div class="h-8 w-32 bg-contain bg-center bg-no-repeat" data-alt="Outside Magazine brand logo placeholder" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB_Pedp5BTgvYCahJl3w_Hws_bbyYyA1NJFa1vtDD5uxrxJfVJ0XNogjrS-8lhXudCggKuBxjZTlwJ1RRFridiUmVGph_XngBfveIF5n0_H75iIn13cKvJV8w9zT2qE3SFKLN_d4rqpDJ93H-mI6YkjMIT147s-UfyTqDJJbFrnlq_JDGgE3KvnEu2k8AxXbWmm9nERTEHXoCBnvr-k_KrIX8lRwsSk02tAe2_tZ62k_4A9TmPrB6HM-ZDqx583DyJuIV30rsrz3aE')"></div>
-  <div class="h-8 w-32 bg-contain bg-center bg-no-repeat" data-alt="Vogue Health brand logo placeholder" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD-is2MDhHIVzC_UxAJSlnTefWnoQldx_SYuZWTNs-7Y_FIUiMn_izduugUDjtOEHID3zHaoNXGfsHiarlbREfXRstzJ-pOmMxXG02qNGIbtu16z8FSHQ8l4CHc8W5LMXlZN5CFFOB5PGWTVvjo_FS3jOJrVKy-ay5ua4hjnpL-qTZhLk_Mo1Jzfu67_-BfapeD0Dx53EcpSrtf6k1CpfjL9cG7SDkRDdWfP5nDImeDucA2z-CraJwrijr0EFiTFf2BIRyQGwx3LjE')"></div>
-  </div>
-  </div>
-  </section>-->
-  <!-- Goal Selection -->
-  <section class="mx-auto max-w-[1200px] px-6 py-20">
-  <div class="mb-12 text-center">
-  <h2 class="text-3xl font-black md:text-4xl">Choose Your Goal</h2>
-  <p class="mt-4 text-gray-500">Tailored macronutrients for every stage of your journey.</p>
-  </div>
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-  <!-- Cut Card -->
-  <div class="group relative overflow-hidden rounded-2xl bg-white dark:bg-[#1a2b28] p-8 shadow-sm transition-all hover:shadow-xl border border-transparent hover:border-primary/20">
-  <div class="mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-primary/10 text-primary transition-transform group-hover:scale-110">
-  <span class="material-symbols-outlined text-4xl">trending_down</span>
-  </div>
-  <h3 class="text-2xl font-bold">The Cut</h3>
-  <p class="mt-4 text-gray-600 dark:text-gray-400">High protein, low carb. Designed to preserve muscle while shedding body fat.</p>
-  <ul class="mt-6 space-y-3 text-sm text-gray-500">
-  <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> 1200-1500 kcal</li>
-  <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Low glycemic index</li>
-  </ul>
-  <button class="mt-8 w-full rounded-lg border-2 border-primary/20 py-3 text-sm font-bold text-primary transition-colors hover:bg-primary hover:text-white">Select Cut</button>
-  </div>
-  <!-- Maintain Card -->
-  <div class="group relative overflow-hidden rounded-2xl bg-white dark:bg-[#1a2b28] p-8 shadow-sm transition-all hover:shadow-xl border-2 border-primary">
-  <div class="absolute right-4 top-4 rounded-full bg-primary px-3 py-1 text-[10px] font-bold text-white uppercase">Most Popular</div>
-  <div class="mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-primary text-white transition-transform group-hover:scale-110">
-  <span class="material-symbols-outlined text-4xl">balance</span>
-  </div>
-  <h3 class="text-2xl font-bold">Maintain</h3>
-  <p class="mt-4 text-gray-600 dark:text-gray-400">Balanced macros for sustained energy and daily performance.</p>
-  <ul class="mt-6 space-y-3 text-sm text-gray-500">
-  <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> 2000-2400 kcal</li>
-  <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Perfect macro split</li>
-  </ul>
-  <button class="mt-8 w-full rounded-lg bg-primary py-3 text-sm font-bold text-white transition-all shadow-lg shadow-primary/30">Select Maintain</button>
-  </div>
-  <!-- Bulk Card -->
-  <div class="group relative overflow-hidden rounded-2xl bg-white dark:bg-[#1a2b28] p-8 shadow-sm transition-all hover:shadow-xl border border-transparent hover:border-primary/20">
-  <div class="mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-primary/10 text-primary transition-transform group-hover:scale-110">
-  <span class="material-symbols-outlined text-4xl">fitness_center</span>
-  </div>
-  <h3 class="text-2xl font-bold">Bulk</h3>
-  <p class="mt-4 text-gray-600 dark:text-gray-400">Calorie surplus focus. Nutrient dense meals to fuel heavy training.</p>
-  <ul class="mt-6 space-y-3 text-sm text-gray-500">
-  <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> 3000+ kcal</li>
-  <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Complex carbs + fats</li>
-  </ul>
-  <button class="mt-8 w-full rounded-lg border-2 border-primary/20 py-3 text-sm font-bold text-primary transition-colors hover:bg-primary hover:text-white">Select Bulk</button>
-  </div>
-  </div>
-  </section>
-  <!-- How It Works Section -->
-  <section class="bg-[#f0f4f3] dark:bg-[#0c1413] py-24">
-  <div class="mx-auto max-w-[1200px] px-6">
-  <div class="mb-20 grid grid-cols-1 lg:grid-cols-2 gap-8 items-end">
-  <div class="flex flex-col gap-4">
-  <h2 class="text-4xl font-black">How it Works</h2>
-  <p class="text-lg text-gray-600 dark:text-gray-400">From the farm to your fitness goal, we handle everything.</p>
-  </div>
-  <div class="flex justify-start lg:justify-end">
-  <a class="flex items-center gap-2 font-bold text-primary" href="#">
-                                  Learn about our sourcing <span class="material-symbols-outlined">arrow_forward</span>
-  </a>
-  </div>
-  </div>
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-  <div class="flex flex-col gap-6">
-  <div class="text-5xl font-black text-primary/20">01</div>
-  <div class="flex h-12 w-12 items-center justify-center rounded-full bg-primary text-white">
-  <span class="material-symbols-outlined">app_registration</span>
-  </div>
-  <h4 class="text-xl font-bold">Select Your Plan</h4>
-  <p class="text-gray-600 dark:text-gray-400 leading-relaxed">Choose your goal and weekly meal frequency. Customize your menu from 30+ new dishes every week.</p>
-  </div>
-  <div class="flex flex-col gap-6">
-  <div class="text-5xl font-black text-primary/20">02</div>
-  <div class="flex h-12 w-12 items-center justify-center rounded-full bg-primary text-white">
-  <span class="material-symbols-outlined">skillet</span>
-  </div>
-  <h4 class="text-xl font-bold">We Cook with Freshness</h4>
-  <p class="text-gray-600 dark:text-gray-400 leading-relaxed">Our chefs prepare your meals using farm-fresh, seasonal ingredients. No frozen components, ever.</p>
-  </div>
-  <div class="flex flex-col gap-6">
-  <div class="text-5xl font-black text-primary/20">03</div>
-  <div class="flex h-12 w-12 items-center justify-center rounded-full bg-primary text-white">
-  <span class="material-symbols-outlined">local_shipping</span>
-  </div>
-  <h4 class="text-xl font-bold">Express Delivery</h4>
-  <p class="text-gray-600 dark:text-gray-400 leading-relaxed">Meals are delivered in chilled, recyclable packaging directly to your doorstep. Heat and eat in 3 minutes.</p>
-  </div>
-  </div>
-  </div>
-  </section>
-  <!-- Image Grid Gallery Teaser -->
-  <section class="py-20">
-  <div class="mx-auto max-w-[1200px] px-6">
-  <h2 class="mb-10 text-center text-3xl font-black">This Week's Favorites</h2>
-  <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-  <div class="group relative aspect-square overflow-hidden rounded-2xl bg-gray-200">
-  <div class="h-full w-full bg-cover transition-transform duration-500 group-hover:scale-110" data-alt="Beef stir-fry with broccoli and peppers" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCiZRh_KHd9WquTtckfNrf1cxYQyMuw9UgLkZHNoALwE83epO2qFe0wufNITInO3pJ9WSEeqmKMh96iApQnrWvWgBBk8BDE7G5YA1B9Ufq17yr8wSiBf6waCSlhzKr9YH34x859A2UYYaq6qj6633XsRB18dFkcluYWMI-zz6Dbcfs6sM0mzbULiZRy3reWEPZMzuPdjs2Manhrldn0aJAGMlT_Prz2Cz4d0briOqU5IRE79frpPA-K4zxHiYQjf7e2Gu3aEhACSdA')"></div>
-  <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
-  <span class="text-white text-xs font-bold">Teriyaki Beef Bowl</span>
-  </div>
-  </div>
-  <div class="group relative aspect-square overflow-hidden rounded-2xl bg-gray-200">
-  <div class="h-full w-full bg-cover transition-transform duration-500 group-hover:scale-110" data-alt="Avocado toast with poached egg" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDTcC0uNVKqAOgAESVblkLh74zx-jDaES2EdYrnGIDkUZP0aBe0N65Zhkn-K-OUfkCgjZvqkQIJikMDb98DvSn3qbUFgkwDYDCqShWaONJDpVCcnELq_PjHPLcEkGX_9cyzi6cXhrNvuSZ-J74eOPN5Z9QOCuDos6od9jj3RMSQeorRwiu0AsfKol3CEwq1wPWY75sxH9jBjrggqMJprqdyvEyGHxNwGxJuAM3cjBXjAsLoOWOlFvIxSdHuAmfG7vuAqYZ1C1tCEDs')"></div>
-  <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
-  <span class="text-white text-xs font-bold">Power Breakfast Toast</span>
-  </div>
-  </div>
-  <div class="group relative aspect-square overflow-hidden rounded-2xl bg-gray-200">
-  <div class="h-full w-full bg-cover transition-transform duration-500 group-hover:scale-110" data-alt="Lemon herb grilled chicken with asparagus" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuASEyF8AS4-MKkwJEzaEWlJ80QwW_UqAOfMiEUn6ezn_4am7eFZ_w8P3wIqV0Y2UPddKYlMr9ZtTDNEnrGOBjKt-NjZizM_M_QgwOtw-3XJhNhEYJwamBlRIlhEGBCXViyqHCE10xkqVcE71doN4Os52pCwgeQ3qNeNSutGm0tbURjh0XrxmADgKGwH2_zwkMZWq9E-ATlgIXA7r1__1seG4_J9dlCFtFevecJD_vnMdctQeSmvjkrle2KwWwTH0I91Ri_vFYVnJsQ')"></div>
-  <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
-  <span class="text-white text-xs font-bold">Herb Roasted Chicken</span>
-  </div>
-  </div>
-  <div class="group relative aspect-square overflow-hidden rounded-2xl bg-gray-200">
-  <div class="h-full w-full bg-cover transition-transform duration-500 group-hover:scale-110" data-alt="Tofu Buddha bowl with sweet potato" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDq9TsWBiB_b72Q5xyZDIts2OB147zghmRvUAYUA2f1CdOow5Q4spCJu3oQtq_oaZyYJh9Ls5pzK4hcD9OrjCsy5YdECegPOMgd7eexcFUP6fvB39eOExgD_DKluSwuOfwin1qQOGmusldjr-9byWqAGfCteH68fICB8twytnMVvUDfojn_-vNXgYg_A4hQVu9jqD2w5GU26Vh6KWiFp29Xhm7Sb7bL6OzQukw-xyT584XaX1oTD4W3XXZuWmDMBEbeWdFZKCKd5dY')"></div>
-  <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
-  <span class="text-white text-xs font-bold">Vegan Zen Bowl</span>
-  </div>
-  </div>
-  </div>
-  </div>
-  </section>
-  <!-- CTA Section -->
-  <section class="mx-auto max-w-[1200px] px-6 pb-24">
-  <div class="relative overflow-hidden rounded-[2rem] bg-background-dark p-12 md:p-24 text-center">
-  <div class="absolute -right-20 -top-20 h-64 w-64 rounded-full bg-primary opacity-20 blur-3xl"></div>
-  <div class="absolute -bottom-20 -left-20 h-64 w-64 rounded-full bg-accent opacity-20 blur-3xl"></div>
-  <div class="relative z-10 mx-auto max-w-2xl">
-  <h2 class="text-4xl font-black text-white md:text-5xl">Ready to transform your lifestyle?</h2>
-  <p class="mt-6 text-lg text-gray-400">Join thousands of others who have reached their fitness goals with GutFoundry. No commitment, cancel anytime.</p>
-  <div class="mt-10 flex flex-wrap justify-center gap-4">
-  <button class="flex h-14 min-w-[200px] items-center justify-center rounded-xl bg-primary px-10 text-lg font-bold text-white transition-all hover:scale-105 active:scale-95">
-                                  Build Your Menu
-                              </button>
-  </div>
-  </div>
-  </div>
-  </section>
-  </main>
-  <!-- Footer -->
-  <footer class="border-t border-[#e9f1f0] dark:border-[#2a3a38] py-16">
-  <div class="mx-auto max-w-[1200px] px-6">
-  <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
-  <div class="col-span-1 md:col-span-1">
-  <div class="flex items-center gap-3">
-  <div class="flex h-15 w-15 items-center justify-center rounded-lg bg-none">
-    <img
-      src="assets/logo.png"
-      alt="logo"
-      class="h-6 w-6 object-contain"
-    />
-  </div>
-  <h2 class="text-lg font-black tracking-tight">GutFoundry</h2>
-  </div>
-  <p class="mt-6 text-sm text-gray-500 leading-relaxed">Crafting the future of performance nutrition. Healthy eating made effortless.</p>
-  </div>
-  <div>
-  <h5 class="font-bold mb-6">Explore</h5>
-  <ul class="space-y-4 text-sm text-gray-500">
-  <li><a class="hover:text-primary" href="#">Our Menu</a></li>
-  <li><a class="hover:text-primary" href="#">Meal Plans</a></li>
-  <li><a class="hover:text-primary" href="#">Gift Cards</a></li>
-  <li><a class="hover:text-primary" href="#">Refer a Friend</a></li>
-  </ul>
-  </div>
-  <div>
-  <h5 class="font-bold mb-6">Support</h5>
-  <ul class="space-y-4 text-sm text-gray-500">
-  <li><a class="hover:text-primary" href="#">Help Center</a></li>
-  <li><a class="hover:text-primary" href="#">Delivery Area</a></li>
-  <li><a class="hover:text-primary" href="#">FAQs</a></li>
-  <li><a class="hover:text-primary" href="#">Contact Us</a></li>
-  </ul>
-  </div>
-  <div>
-  <h5 class="font-bold mb-6">Stay Fresh</h5>
-  <p class="text-sm text-gray-500 mb-4">Get healthy recipes and weekly discounts.</p>
-  <!--<div class="flex gap-2">
-  <input class="w-full rounded-lg border-[#e9f1f0] dark:border-white/10 bg-white dark:bg-white/5 px-4 text-sm outline-none focus:border-primary" placeholder="Email address" type="email"/>
-  <button class="rounded-lg bg-primary p-2 text-white">
-  <span class="material-symbols-outlined">send</span>
-  </button>
-  </div>-->
-  </div>
-  </div>
-  <div class="mt-16 flex flex-col items-center justify-between gap-6 border-t border-[#e9f1f0] dark:border-[#2a3a38] pt-8 md:flex-row">
-  <p class="text-xs text-gray-500">© 2026 GutFoundry,all rights reserved.</p>
-  <div class="flex gap-8">
-  <a class="text-xs text-gray-500 hover:text-primary transition-colors" href="#">Privacy Policy</a>
-  <a class="text-xs text-gray-500 hover:text-primary transition-colors" href="#">Terms of Service</a>
-  <a class="text-xs text-gray-500 hover:text-primary transition-colors" href="#">Cookie Policy</a>
-  </div>
-  </div>
-  </div>
-  </footer>
-  </div>
+<style>
+
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+}
+
+body{
+background:#0f0f14;
+color:white;
+overflow:hidden;
+}
+
+/* Floating hearts */
+
+.hearts{
+position:fixed;
+width:100%;
+height:100%;
+pointer-events:none;
+overflow:hidden;
+}
+
+.heart{
+position:absolute;
+bottom:-20px;
+font-size:20px;
+animation:floatUp linear infinite;
+opacity:0.6;
+}
+
+@keyframes floatUp{
+0%{
+transform:translateY(0);
+opacity:0;
+}
+20%{
+opacity:0.7;
+}
+100%{
+transform:translateY(-110vh);
+opacity:0;
+}
+}
+
+/* Slides */
+
+.container{
+display:flex;
+width:600%;
+height:100vh;
+transition:transform 0.8s ease;
+}
+
+.slide{
+width:100vw;
+height:100vh;
+flex-shrink:0;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+padding:30px;
+text-align:center;
+}
+
+.note{
+font-size:1.4rem;
+line-height:1.7;
+max-width:400px;
+min-height:120px;
+}
+
+/* Buttons */
+
+button{
+margin-top:40px;
+padding:14px 28px;
+font-size:1rem;
+border:none;
+border-radius:30px;
+background:#ff4d6d;
+color:white;
+cursor:pointer;
+}
+
+button:active{
+transform:scale(0.95);
+}
+
+/* Valentine */
+
+.valentine-question{
+font-size:1.8rem;
+margin-bottom:40px;
+}
+
+.choice-container{
+position:relative;
+width:220px;
+height:140px;
+}
+
+#yesBtn,#noBtn{
+position:absolute;
+padding:14px 26px;
+border-radius:25px;
+}
+
+#yesBtn{
+left:0;
+background:#ff4d6d;
+}
+
+#noBtn{
+right:0;
+background:#444;
+}
+
+.hidden{
+display:none;
+}
+
+.final-message{
+font-size:1.7rem;
+color:#ff4d6d;
+max-width:400px;
+}
+
+.cursor{
+display:inline-block;
+width:2px;
+background:white;
+animation:blink 1s infinite;
+margin-left:3px;
+}
+
+@keyframes blink{
+0%,50%,100%{opacity:1;}
+25%,75%{opacity:0;}
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="hearts" id="hearts"></div>
+
+<div class="container" id="container">
+
+<div class="slide">
+<div class="note" data-text="I wasn't planning for this to be an apology in the first part, pakshe enthareyyaana oronn kanichitt ipo ithallathe vere vazhi illalo enik"></div>
+<button onclick="nextSlide()">Next</button>
+</div>
+
+<div class="slide">
+<div class="note" data-text="I called you a hypocrite when I should have talked to you instead. We both knew there were things we don’t always get right, things we’re both imperfect about. But instead of trusting what we had and communicating, I chose words that hurt you.
+
+You didn’t deserve to be called out like that. You deserved understanding from me, not anger."></div>
+<button onclick="nextSlide()">Next</button>
+</div>
+
+<div class="slide">
+<div class="note" data-text="When I said things like “if I want something and you don’t, then I’m not getting anything,” it came from frustration, not from how I truly see us.
+
+Because the truth is, I never saw this relationship as something where I lose. Loving you has never felt like losing. Even in difficult moments, you have been someone I’m grateful to have in my life."></div>
+<button onclick="nextSlide()">Next</button>
+</div>
+
+<div class="slide">
+<div class="note" data-text="You asked me why I stay if I’m unhappy in moments like that.
+
+I stay because one moment of weakness can never outweigh everything we are. I stay because of every beautiful memory we’ve built. I stay because what we have is real to me.
+
+I stay because it’s you.
+
+You once asked me what I’d do if you were blind, and I said I’d be the blind leading the blind. I meant that. Not because things would be easy, but because I would still choose to walk with you, no matter what."></div>
+<button onclick="nextSlide()">Next</button>
+</div>
+
+<div class="slide">
+<div class="note" data-text="Last Valentine’s Day, you told me “you Nikhil me,” and I don’t think you realize how much that stayed with me.
+
+Because the truth is…
+
+Without you, I’m never Nikhil.
+
+Not complete. Not whole in the way I am when I’m with you.
+
+I love you. Always."></div>
+<button onclick="nextSlide()">Next</button>
+</div>
+
+<div class="slide">
+
+<div class="valentine-question">
+Will you be my Valentine? ❤️
+</div>
+
+<div class="choice-container" id="choiceContainer">
+
+<button id="yesBtn">Yes</button>
+<button id="noBtn">No</button>
+
+</div>
+
+</div>
+
+<div class="slide">
+
+<div class="final-message hidden" id="finalMessage"></div>
+
+</div>
+
+</div>
+
+<script>
+
+/* Slide navigation */
+
+let currentSlide=0;
+const container=document.getElementById("container");
+
+function nextSlide(){
+currentSlide++;
+container.style.transform=`translateX(-${currentSlide*100}vw)`;
+}
+
+/* Typewriter */
+
+const notes=document.querySelectorAll(".note");
+
+notes.forEach(note=>{
+let text=note.getAttribute("data-text");
+let i=0;
+
+function type(){
+if(i<text.length){
+note.innerHTML=text.substring(0,i+1)+"<span class='cursor'></span>";
+i++;
+setTimeout(type,35);
+}else{
+note.innerHTML=text;
+}
+}
+
+type();
+});
+
+/* Floating hearts */
+
+function createHeart(){
+const heart=document.createElement("div");
+heart.className="heart";
+heart.innerHTML="❤️";
+heart.style.left=Math.random()*100+"vw";
+heart.style.fontSize=(Math.random()*10+15)+"px";
+heart.style.animationDuration=(Math.random()*5+5)+"s";
+document.getElementById("hearts").appendChild(heart);
+
+setTimeout(()=>heart.remove(),10000);
+}
+
+setInterval(createHeart,500);
+
+/* Valentine logic */
+
+const yesBtn=document.getElementById("yesBtn");
+const noBtn=document.getElementById("noBtn");
+
+let noPressed=false;
+
+yesBtn.onclick=()=>{
+showFinal(true);
+};
+
+noBtn.addEventListener("mouseover",moveNo);
+noBtn.addEventListener("touchstart",moveNo);
+
+function moveNo(){
+
+if(!noPressed){
+
+const container=document.getElementById("choiceContainer");
+
+const maxX=container.clientWidth-noBtn.clientWidth;
+const maxY=container.clientHeight-noBtn.clientHeight;
+
+noBtn.style.left=Math.random()*maxX+"px";
+noBtn.style.top=Math.random()*maxY+"px";
+
+}
+}
+
+noBtn.onclick=()=>{
+noPressed=true;
+noBtn.innerText="Yes";
+noBtn.style.background="#ff4d6d";
+showFinal(false);
+};
+
+/* Final screen */
+
+function showFinal(choseYes){
+
+currentSlide++;
+container.style.transform=`translateX(-${currentSlide*100}vw)`;
+
+const msg=document.getElementById("finalMessage");
+
+msg.classList.remove("hidden");
+
+if(choseYes){
+
+typeFinal("Still falling for you,ukw?    paazhirul veezhumee naalukettil, ninta paadangal thottapol paurnamiyaayi and you're the machile sreelekshmi of mu novukal maarala moodunna manass");
+
+}else{
+
+typeFinal("angane ang povannn vicharicho?? ❤️\n\nThank you for choosing me again and again.\n\nyou Nikhil me too bro.");
+
+}
+
+}
+
+function typeFinal(text){
+
+const msg=document.getElementById("finalMessage");
+
+let i=0;
+
+function type(){
+if(i<text.length){
+msg.innerHTML=text.substring(0,i+1)+"<span class='cursor'></span>";
+i++;
+setTimeout(type,40);
+}else{
+msg.innerHTML=text;
+}
+}
+
+type();
+
+}
+
+</script>
+
 </body>
 </html>
