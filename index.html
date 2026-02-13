@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NiggaWhat ?❤️</title>
+<title>❤️</title>
 
 <style>
 
@@ -39,24 +39,15 @@ opacity:0.6;
 }
 
 @keyframes floatUp{
-0%{
-transform:translateY(0);
-opacity:0;
-}
-20%{
-opacity:0.7;
-}
-100%{
-transform:translateY(-110vh);
-opacity:0;
-}
+0%{transform:translateY(0);opacity:0;}
+20%{opacity:0.7;}
+100%{transform:translateY(-110vh);opacity:0;}
 }
 
 /* Slides */
 
 .container{
 display:flex;
-width:600%;
 height:100vh;
 transition:transform 0.8s ease;
 }
@@ -158,31 +149,37 @@ margin-left:3px;
 
 <div class="container" id="container">
 
+<!-- Slide 1 -->
 <div class="slide">
 <div class="note" data-text="Uvva Uvva enti enti"></div>
 <button onclick="nextSlide()">Next</button>
 </div>
 
+<!-- Slide 2 -->
 <div class="slide">
 <div class="note" data-text="uvva uvva enti enti"></div>
 <button onclick="nextSlide()">Next</button>
 </div>
 
+<!-- Slide 3 -->
 <div class="slide">
-<div class="note" data-text="uvva uvva enti entie()">Next</button>
+<div class="note" data-text="uvva uvva enti entie"></div>
+<button onclick="nextSlide()">Next</button>
 </div>
 
+<!-- Slide 4 -->
 <div class="slide">
 <div class="note" data-text="uvva uvva enti enti."></div>
 <button onclick="nextSlide()">Next</button>
 </div>
 
+<!-- Slide 5 -->
 <div class="slide">
-<div class="note" data-text=" uvva uvva enti enti"></div>
+<div class="note" data-text="uvva uvva enti enti"></div>
 <button onclick="nextSlide()">Next</button>
 </div>
-</div>
 
+<!-- Slide 6 Valentine -->
 <div class="slide">
 
 <div class="valentine-question">
@@ -190,32 +187,38 @@ Will you be my Valentine? ❤️
 </div>
 
 <div class="choice-container" id="choiceContainer">
-
 <button id="yesBtn">Yes</button>
 <button id="noBtn">No</button>
-
 </div>
 
 </div>
 
+<!-- Slide 7 Final -->
 <div class="slide">
-
 <div class="final-message hidden" id="finalMessage"></div>
-
 </div>
 
 </div>
 
 <script>
 
-/* Slide navigation */
+/* Dynamic container width */
+
+const container=document.getElementById("container");
+const totalSlides=document.querySelectorAll(".slide").length;
+container.style.width=`${totalSlides*100}vw`;
 
 let currentSlide=0;
-const container=document.getElementById("container");
 
 function nextSlide(){
+
+if(currentSlide<totalSlides-1){
+
 currentSlide++;
 container.style.transform=`translateX(-${currentSlide*100}vw)`;
+
+}
+
 }
 
 /* Typewriter */
@@ -223,118 +226,37 @@ container.style.transform=`translateX(-${currentSlide*100}vw)`;
 const notes=document.querySelectorAll(".note");
 
 notes.forEach(note=>{
+
 let text=note.getAttribute("data-text");
 let i=0;
 
 function type(){
+
 if(i<text.length){
+
 note.innerHTML=text.substring(0,i+1)+"<span class='cursor'></span>";
 i++;
 setTimeout(type,35);
+
 }else{
+
 note.innerHTML=text;
+
 }
+
 }
 
 type();
+
 });
 
 /* Floating hearts */
 
 function createHeart(){
+
 const heart=document.createElement("div");
+
 heart.className="heart";
 heart.innerHTML="❤️";
-heart.style.left=Math.random()*100+"vw";
-heart.style.fontSize=(Math.random()*10+15)+"px";
-heart.style.animationDuration=(Math.random()*5+5)+"s";
-document.getElementById("hearts").appendChild(heart);
 
-setTimeout(()=>heart.remove(),10000);
-}
-
-setInterval(createHeart,500);
-
-/* Valentine logic */
-
-const yesBtn=document.getElementById("yesBtn");
-const noBtn=document.getElementById("noBtn");
-
-let noPressed=false;
-
-yesBtn.onclick=()=>{
-showFinal(true);
-};
-
-noBtn.addEventListener("mouseover",moveNo);
-noBtn.addEventListener("touchstart",moveNo);
-
-function moveNo(){
-
-if(!noPressed){
-
-const container=document.getElementById("choiceContainer");
-
-const maxX=container.clientWidth-noBtn.clientWidth;
-const maxY=container.clientHeight-noBtn.clientHeight;
-
-noBtn.style.left=Math.random()*maxX+"px";
-noBtn.style.top=Math.random()*maxY+"px";
-
-}
-}
-
-noBtn.onclick=()=>{
-noPressed=true;
-noBtn.innerText="Yes";
-noBtn.style.background="#ff4d6d";
-showFinal(false);
-};
-
-/* Final screen */
-
-function showFinal(choseYes){
-
-currentSlide++;
-container.style.transform=`translateX(-${currentSlide*100}vw)`;
-
-const msg=document.getElementById("finalMessage");
-
-msg.classList.remove("hidden");
-
-if(choseYes){
-
-typeFinal(" uvva uvva enti enti enti");
-
-}else{
-
-typeFinal("how dare you?.");
-
-}
-
-}
-
-function typeFinal(text){
-
-const msg=document.getElementById("finalMessage");
-
-let i=0;
-
-function type(){
-if(i<text.length){
-msg.innerHTML=text.substring(0,i+1)+"<span class='cursor'></span>";
-i++;
-setTimeout(type,40);
-}else{
-msg.innerHTML=text;
-}
-}
-
-type();
-
-}
-
-</script>
-
-</body>
-</html>
+heart.style.left=Math.random()*
